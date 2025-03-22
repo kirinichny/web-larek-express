@@ -30,7 +30,7 @@ const createOrder = (req: Request, res: Response, next: NextFunction) => {
 
       const orderId = faker.string.uuid();
 
-      return res.status(HTTP_STATUS.CREATED)
+      return res.status(HTTP_STATUS.OK)
         .json({
           id: orderId,
           total,
