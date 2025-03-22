@@ -13,7 +13,7 @@ const errorHandler = (
   } = err;
 
   res.status(statusCode)
-    .json({ error: message });
+    .json({ message });
 };
 
 export default errorHandler;
